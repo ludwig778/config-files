@@ -6,6 +6,8 @@ alias kga="kubectl get all"
 alias kd="kubectl describe"
 alias ke="kubectl delete"
 alias kl="kubectl logs -f"
+alias kga="kubectl get all"
+alias kgan="kubectl get --all-namespaces all"
 
 function ks() {
     kubectl exec -it $1 -- $2
