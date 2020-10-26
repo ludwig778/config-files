@@ -1,0 +1,11 @@
+case $OS in
+    Mac) SETUP_SCRIPT="$CONFIG_FILES_DIR/bin/setup_mac";;
+    Linux) SETUP_SCRIPT="$CONFIG_FILES_DIR/bin/setup_linux";;
+esac
+
+if [[ -v SETUP_SCRIPT ]]
+then
+    setup () {
+        $SETUP_SCRIPT
+    }
+fi

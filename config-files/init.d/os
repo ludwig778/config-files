@@ -1,0 +1,4 @@
+case $(uname -s) in
+    Linux*)  OS=Linux;;
+    Darwin*) OS=Mac;;
+esac
