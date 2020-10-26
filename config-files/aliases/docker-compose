@@ -9,9 +9,9 @@ get_container_name () {
 }
 
 q () {
-  docker-compose run $(get_container_name) $@
+  docker-compose run --rm $(get_container_name) $@
 }
 
 qq () {
-  docker-compose run --service-ports $(get_container_name) $@
+  docker-compose run --rm --service-ports $(get_container_name) $@
 }
