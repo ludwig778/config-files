@@ -21,6 +21,6 @@ config checkout
 Ajouter cette ligne à votre fichier $HOME/.bashrc ($HOME/.bash_profile sur Mac), pour prendre en charge les alias/scripts définis, et relancer un terminal.
 
 ```
-source .config/config_files/init.sh
+source $HOME/.config/config_files/init.sh
 ```
 
