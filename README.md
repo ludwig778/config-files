@@ -5,13 +5,13 @@
 Cloner le repository
 
 ```
-git clone --bare git@github.com:ludwig778/dotfiles.git $HOME/.cfg
+git clone git@github.com:ludwig778/config-files.git $HOME/.config
 ```
 
 La mise en place
 
 ```
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/.config/.git --work-tree=$HOME/.config'
 config config --local status.showUntrackedFiles no
 config checkout
 ```
@@ -21,6 +21,6 @@ config checkout
 Ajouter cette ligne à votre fichier $HOME/.bashrc ($HOME/.bash_profile sur Mac), pour prendre en charge les alias/scripts définis, et relancer un terminal.
 
 ```
-source .cfg_dir/init.sh
+source .config/config_files/init.sh
 ```
 

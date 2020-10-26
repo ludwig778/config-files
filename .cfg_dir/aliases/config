@@ -1,7 +1,0 @@
-alias ca="config add"
-alias cdd="config diff"
-alias cdca="config diff --cached"
-alias cst="config status -u ~/.cfg_dir"
-alias cm="config commit -m"
-alias cpp="config push"
-alias cl="config pull"

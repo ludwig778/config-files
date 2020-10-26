@@ -1,0 +1,7 @@
+alias cfa="config add"
+alias cfd="config diff"
+alias cfca="config diff --cached"
+alias cfst="config status"
+alias cfmsg="config commit -m"
+alias cfp="config push"
+alias cfl="config pull"
