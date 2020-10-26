@@ -1,1 +1,3 @@
 alias wr="grep -nwr . -e"
+
+alias m="make"
