@@ -8,5 +8,5 @@ alias ke="kubectl delete"
 alias kl="kubectl logs -f"
 
 function ks() {
-    kubectl exec -it $1 bash
+    kubectl exec -it $1 -- $2
 }
