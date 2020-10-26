@@ -3,7 +3,7 @@ alias dc="docker-compose"
 get_container_name () {
   if [ -z $CONTAINER_NAME ]; then
     echo $(basename $PWD)
-  else;
+  else
     echo $CONTAINER_NAME
   fi
 }
