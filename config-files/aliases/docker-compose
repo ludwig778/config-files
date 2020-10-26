@@ -1,9 +1,17 @@
 alias dc="docker-compose"
 
+get_container_name () {
+  if [ -z $CONTAINER_NAME ]; then
+    echo $(basename $PWD)
+  else;
+    echo $CONTAINER_NAME
+  fi
+}
+
 q () {
-  docker-compose run $(basename $PWD) $@
+  docker-compose run $(get_container_name) $@
 }
 
 qq () {
-  docker-compose run --service-ports $(basename $PWD) $@
+  docker-compose run --service-ports $(get_container_name) $@
 }
