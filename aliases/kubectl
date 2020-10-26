@@ -14,3 +14,5 @@ function ks() {
 function ksc() {
     kubectl config set-context --current --namespace $1
 }
+
+alias kgc="kubectl config get-contexts"
