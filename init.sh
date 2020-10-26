@@ -18,6 +18,4 @@ source_files () {
 source_files $CONFIG_FILES_DIR/aliases
 source_files $CONFIG_FILES_DIR/init.d
 
-config config --local status.showUntrackedFiles no
-
 git config --global core.excludesfile ${CONFIG_FILES_DIR}/config/global_gitignore

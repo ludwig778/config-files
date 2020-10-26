@@ -11,9 +11,7 @@ git clone git@github.com:ludwig778/config-files.git $HOME/.config
 La mise en place
 
 ```
-alias config='/usr/bin/git --git-dir=$HOME/.config/.git --work-tree=$HOME/.config'
-config config --local status.showUntrackedFiles no
-config checkout
+alias config='/usr/bin/git --git-dir=$HOME/.config/config-files/.git --work-tree=$HOME/.config/config-files'
 ```
 
 ## Activation des alias/scripts
