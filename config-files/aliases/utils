@@ -3,3 +3,5 @@ alias wr="grep -nwr . -e"
 alias m="make"
 
 alias tre="tree"
+
+alias pg="ping 8.8.8.8"
