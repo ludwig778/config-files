@@ -1,0 +1,9 @@
+alias dc="docker-compose"
+
+q () {
+  docker-compose run $(basename $PWD) $@
+}
+
+qq () {
+  docker-compose run --service-ports $(basename $PWD) $@
+}
