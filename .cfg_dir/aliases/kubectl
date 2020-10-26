@@ -1,0 +1,12 @@
+alias k="kubectl"
+alias kg="kubectl get"
+alias kaa="kubectl apply"
+alias ka="kubectl apply -f"
+alias kga="kubectl get all"
+alias kd="kubectl describe"
+alias ke="kubectl delete"
+alias kl="kubectl logs -f"
+
+function ks() {
+    kubectl exec -it $1 bash
+}
