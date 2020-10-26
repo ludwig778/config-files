@@ -1,7 +1,13 @@
-
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
-source ~/.cfg_dir/aliases/*
+source_files () {
+    for f in $1/*
+    do
+        source $f
+    done
+}
+
+source_files ~/.cfg_dir/aliases
 
 config config --local status.showUntrackedFiles no
 
