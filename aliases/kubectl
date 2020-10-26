@@ -10,3 +10,7 @@ alias kl="kubectl logs -f"
 function ks() {
     kubectl exec -it $1 -- $2
 }
+
+function ksc() {
+    kubectl config set-context --current --namespace $1
+}
