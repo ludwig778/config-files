@@ -1,0 +1,5 @@
+PYTHON2_CMD="python2"
+PYTHON3_CMD="ipython3 --no-confirm-exit --colors=Linux"
+
+alias p=$PYTHON3_CMD
+alias p2=$PYTHON2_CMD
