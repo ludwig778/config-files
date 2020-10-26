@@ -1,4 +1,4 @@
-# DOTFiles Manager
+# Config Files Manager
 
 ## Mise en place
 
@@ -21,6 +21,6 @@ config checkout
 Ajouter cette ligne à votre fichier $HOME/.bashrc ($HOME/.bash_profile sur Mac), pour prendre en charge les alias/scripts définis, et relancer un terminal.
 
 ```
-source $HOME/.config/config_files/init.sh
+source $HOME/.config/config-files/init.sh
 ```
 

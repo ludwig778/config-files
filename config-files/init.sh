@@ -7,11 +7,11 @@ source_files () {
     done
 }
 
-source_files ~/.config/config_files/aliases
+source_files ~/.config/config-files/aliases
 
 config config --local status.showUntrackedFiles no
 
 git config --global core.excludesfile '~/.config/config_files/config/global_gitignore'
 
 
-alias ref="source ~/.config/config_files/init.sh"
+alias ref="source ~/.config/config-files/init.sh"
