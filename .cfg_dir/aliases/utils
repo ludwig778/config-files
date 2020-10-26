@@ -1,0 +1,1 @@
+alias wr="grep -nwr . -e"
