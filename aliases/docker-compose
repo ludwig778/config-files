@@ -1,4 +1,8 @@
 alias dc="docker-compose"
+alias dcb="docker-compose build"
+alias dcbn="docker-compose build --no-cache"
+alias dcd="docker-compose down"
+alias dcdv="docker-compose down --volumes"
 
 get_container_name () {
   if [ -z $CONTAINER_NAME ]; then
