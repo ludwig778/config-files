@@ -1,0 +1,14 @@
+
+
+_fzf_wrapper () {
+    FILE=$(fzf)
+
+    if [ $? -eq 0 ]
+    then
+        echo $FILE
+        eval "$1 $FILE"
+    fi
+}
+
+alias fv='_fzf_wrapper vi'
+alias fca='_fzf_wrapper cat'
