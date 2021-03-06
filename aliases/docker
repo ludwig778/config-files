@@ -1,0 +1,21 @@
+alias d="docker"
+alias di="docker image"
+alias ds="docker ps"
+alias dsa="docker ps -a"
+alias dr="docker rm"
+
+ddbg () {
+  docker run --rm -it \
+  --network=container:$1 \
+  --pid=container:$1 \
+  --volumes-from $1 \
+  ludwig778/debug:latest
+}
+
+dsh () {
+    docker run --rm -it --entrypoint bash $1 2>/dev/null || docker run --rm -it --entrypoint sh $1 2>/dev/null
+}
+
+dex () {
+    docker exec -it $1 bash 2>/dev/null || docker exec -it $1 sh 2>/dev/null
+}
