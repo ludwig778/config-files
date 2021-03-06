@@ -1,4 +1,5 @@
 alias dc="docker-compose"
+alias dcs="docker-compose ps"
 alias dcb="docker-compose build"
 alias dcbn="docker-compose build --no-cache"
 alias dcd="docker-compose down"
