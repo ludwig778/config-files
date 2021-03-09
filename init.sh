@@ -1,6 +1,6 @@
 CONFIG_FILES_DIR=~/.config/config-files
 
-alias config='/usr/bin/git --git-dir=$HOME/.config/.git --work-tree=$HOME/.config'
+alias config='/usr/bin/git --git-dir=$CONFIG_FILES_DIR/.git --work-tree=$CONFIG_FILES_DIR'
 alias ref="source $CONFIG_FILES_DIR/init.sh"
 
 case $SHELL in
