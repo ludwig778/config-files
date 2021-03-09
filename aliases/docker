@@ -1,8 +1,9 @@
 alias d="docker"
-alias di="docker image"
+alias di="docker images"
 alias ds="docker ps"
 alias dsa="docker ps -a"
 alias dr="docker rm"
+alias dpu="docker pull"
 
 ddbg () {
   docker run --rm -it \
