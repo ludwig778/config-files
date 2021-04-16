@@ -5,7 +5,7 @@
 Cloner le repository
 
 ```
-git clone git@github.com:ludwig778/config-files.git $HOME/.config
+git clone git@github.com:ludwig778/config-files.git $HOME/.config/config-files
 ```
 
 ## Activation des alias/scripts
