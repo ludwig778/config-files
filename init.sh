@@ -19,3 +19,6 @@ source_files $CONFIG_FILES_DIR/aliases
 source_files $CONFIG_FILES_DIR/init.d
 
 git config --global core.excludesfile ${CONFIG_FILES_DIR}/config/global_gitignore
+git config --global pull.rebase true
+
+PATH=$PATH:/usr/local/go/bin:/home/ludwig/go/bin
