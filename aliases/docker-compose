@@ -1,9 +1,9 @@
-alias dc="docker-compose"
-alias dcs="docker-compose ps"
-alias dcb="docker-compose build"
-alias dcbn="docker-compose build --no-cache"
-alias dcd="docker-compose down"
-alias dcdv="docker-compose down --volumes"
+alias dc="docker compose"
+alias dcs="docker compose ps"
+alias dcb="docker compose build"
+alias dcbn="docker compose build --no-cache"
+alias dcd="docker compose down"
+alias dcdv="docker compose down --volumes"
 
 get_container_name () {
   if [ -z $CONTAINER_NAME ]; then
@@ -14,9 +14,9 @@ get_container_name () {
 }
 
 q () {
-  docker-compose run --rm $(get_container_name) $@
+  docker compose run --rm $(get_container_name) $@
 }
 
 qq () {
-  docker-compose run --rm --service-ports $(get_container_name) $@
+  docker compose run --rm --service-ports $(get_container_name) $@
 }
