@@ -3,7 +3,7 @@ alias dcs="docker compose ps"
 alias dcb="docker compose build"
 alias dcbn="docker compose build --no-cache"
 alias dcd="docker compose down"
-alias dcdv="docker compose down --volumes"
+alias dcdv="docker compose down --volumes --remove-orphans"
 
 get_container_name () {
   if [ -z $CONTAINER_NAME ]; then
